@@ -13,7 +13,7 @@ let theNumber;
 function newGame() {
 	theNumber = Math.round(Math.random() * 10);
 	console.log(theNumber);
-	resultElement.textContent = 'hmmmmm.....';
+	resultElement.textContent = 'хммммммммм.....';
 }
 
 // виклик функціх
@@ -27,16 +27,13 @@ function checkingTheAnswer() {
 	if (inputElement.value) {
 		console.log(Number(inputElement.value));
 		if (theNumber == inputElement.value) {
-			console.log('URAAAA');
 			resultElement.textContent =
-				'You won. please enter reset to start a new game';
+				'Ти виграла. Нажми кнопку перезапустити щоб почати нову гру';
 		} else if (theNumber != inputElement.value) {
 			if (theNumber > inputElement.value) {
-				console.log('your number is less');
-				resultElement.textContent = 'your number is less';
+				resultElement.textContent = 'твоє число менше';
 			} else if (theNumber < inputElement.value) {
-				resultElement.textContent = 'your number is more';
-				console.log('your number is more');
+				resultElement.textContent = 'твоє число більше';
 			}
 		}
 	}
