@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script src="./js/script.js" defer></script>
+		<title>Guess the number</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<section class="page__guess guess">
+					<h1 class="guess__title">Guess the number</h1>
+					<div class="guess__label">guess the number between 0 and 10</div>
+					<form action="#" class="guess__form form" method="post">
+						<input
+							type="number"
+							name=""
+							id="input-number"
+							class="form__input" />
+						<button
+							type="button"
+							class="form__button button"
+							id="think-button">
+							think
+						</button>
+					</form>
+					<div class="guess__result" id="result">Your number is less</div>
+					<button
+						type="button"
+						class="guess__button-reset button"
+						id="reset-button">
+						reset
+					</button>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
